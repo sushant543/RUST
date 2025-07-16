@@ -26,7 +26,24 @@ It accepts a simple JSON POST request containing a `name` and responds with a gr
 
 ## 📬 API Endpoint
 
+## 📈 Learning Goals
+
+This project is part of my journey to learn:
+
+- Backend development in Rust
+- Async programming with Tokio
+- Building and documenting real-world APIs
+
 ### `POST /greet`
+
+##Test with 
+
+curl -X POST http://localhost:8080/greet \
+  -H "Content-Type: application/json" \
+  -d '{"name": "Sanju"}'
+
+
+
 
 #### ✅ Request Body
 
