@@ -31,17 +31,9 @@ This project is part of my journey to learn:
 - Backend development in Rust
 - Async programming with Tokio
 - Building and documenting real-world APIs
-## 📈 Learning Goals
 
-This project is part of my journey to learn:
-
-- Backend development in Rust
-- Async programming with Tokio
-- Building and documenting real-world APIs
-
-### `POST /greet`
-
-'''Test with 
+### Test with 
+```json
 {
 curl -X POST http://localhost:8080/greet \
   -H "Content-Type: application/json" \
