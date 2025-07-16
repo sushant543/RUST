@@ -1,37 +1,36 @@
-# 🦀 Rust Greet Server (Axum + In-Memory Store)
+# 🦀 Rust Axum Greet Server
 
-A simple and beginner-friendly HTTP server written in **Rust** using the [Axum](https://docs.rs/axum) framework. It accepts a JSON `POST` request with a user's name and age, stores the info in memory, and returns a greeting response.
+A lightweight HTTP server written in **Rust** using the [Axum](https://docs.rs/axum) web framework.  
+It accepts a simple JSON POST request containing a `name` and responds with a greeting message.
 
 ---
 
 ## 🚀 Features
 
-- 📥 Accepts POST request with `name` and `age`
-- 💾 Stores data in an in-memory `HashMap`
-- 🧠 Built using `async` Rust (`tokio` runtime)
-- ⚡ Uses `Arc<Mutex<...>>` for safe concurrent state
-- 🔌 Easy to extend with GET routes, file storage, or a database
+- Accepts a JSON `POST` request to `/greet`
+- Returns a greeting message in JSON format
+- Runs on `tokio` async runtime
+- Clean, minimal, and beginner-friendly Rust project
 
 ---
-
-## 🛠 Tech Stack
-
-- [Rust](https://www.rust-lang.org/)
-- [Axum](https://docs.rs/axum)
-- [Tokio](https://tokio.rs/)
-- [Serde](https://serde.rs/) for JSON (de)serialization
-
 ---
 
-## 📬 API Endpoints
+## 🧠 Planned Features / TODO
+
+- [ ] Store name and age in memory using `HashMap`
+- [ ] Add a `GET /people` route to list stored users
+- [ ] Save to JSON file for persistence
+- [ ] Add input validation (e.g., name not empty, age > 0)
+- [ ] Serve static HTML pages or React frontend
+- [ ] Deploy to cloud (Render, Railway, etc.)
+
+## 📬 API Endpoint
 
 ### `POST /greet`
 
-Accepts a JSON payload with `name` and `age`.
-
 #### ✅ Request Body
+
 ```json
 {
-  "name": "Sanju",
-  "age": 21
+  "name": "Sanju"
 }
