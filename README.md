@@ -33,12 +33,9 @@ This project is part of my journey to learn:
 - Building and documenting real-world APIs
 
 ### Test with 
-```json
-{
 curl -X POST http://localhost:8080/greet \
   -H "Content-Type: application/json" \
   -d '{"name": "Sanju"}'
-}
 
 
 
