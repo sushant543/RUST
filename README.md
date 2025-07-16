@@ -41,12 +41,12 @@ This project is part of my journey to learn:
 
 ### `POST /greet`
 
-##Test with 
-
+'''Test with 
+{
 curl -X POST http://localhost:8080/greet \
   -H "Content-Type: application/json" \
   -d '{"name": "Sanju"}'
-
+}
 
 
 
@@ -54,5 +54,5 @@ curl -X POST http://localhost:8080/greet \
 
 ```json
 {
-  "name": "Sanju"
+  "name": "xyz"
 }
