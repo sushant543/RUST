@@ -24,8 +24,13 @@ It accepts a simple JSON POST request containing a `name` and responds with a gr
 - [ ] Serve static HTML pages or React frontend
 - [ ] Deploy to cloud (Render, Railway, etc.)
 
-## 📬 API Endpoint
+## 📈 Learning Goals
 
+This project is part of my journey to learn:
+
+- Backend development in Rust
+- Async programming with Tokio
+- Building and documenting real-world APIs
 ## 📈 Learning Goals
 
 This project is part of my journey to learn:
